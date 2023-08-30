@@ -1,0 +1,237 @@
+<script src="https://ideryang.oss-cn-hangzhou.aliyuncs.com/jquery-3.4.1.min.js"></script>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Evan Yang - Product Designer</title>
+  <meta name="author" content="Evan Yang">
+  <meta name="description" content="Evan Yang, Product Designer">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+
+<body>
+
+  <header>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    <aside id="contact-details">
+      <dl class="account">
+
+        <dt>Say Hello to</dt>
+          <dd itemprop="email"><a href="mailto:ideryang@gmail.com">ideryang@gmail.com</a>
+          </dd>
+
+        <dt>Follow</dt>
+          <dd><a href="https://www.instagram.com/yangshuang.photography/" target="_blank">instagram</a>
+          </dd>
+      </dl>
+
+      <address itemprop="address" class="column-2">
+        <a href="https://ideryang.com">All Content © Evan<br> Design & Development by Evan</a></address>
+    </aside>
+
+    <nav>
+      <ul>
+        <li>
+            <a data-section="what-I-do" class="active">What I do.</a>
+        </li>
+
+        <li>
+            <a data-section="what-I-like">What I Like.</a>
+        </li>
+
+        <li>
+            <a data-section="selected-projects">Selected projects.</a>
+        </li>
+
+
+        <li>
+            <a data-section="contact">Contact.</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <script type="text/javascript">
+        // click event on a element in mynav
+        $(function() {
+          $('nav a').click(function() {
+            // Get the section to show
+            var $section = $('#' + $(this).data('section'));
+            $(this).parent().siblings().children().removeClass('active');
+            $(this).addClass('active');
+
+            // If its already visible, do nothing.
+            // Otherwise, hide the others and then fade in the desired section.
+            if (!$section.is(':visible')) {
+              $('.hideable-section').hide();
+              $section.fadeIn();
+            }
+          });
+        });
+      </script>
+
+  </header>
+
+  <div id="what-I-do" class="hideable-section">
+    <p>I'm Evan, a designer and developer. Now design leader @TikTok. <br><br>I led design for Soda Music at ByteDance, achieving top-grossing status, a #1 App Store rank in a year, and a consistent 4.9 rating. <br><br>I've also contributed to AliPay FinTech, Alibaba Group's internationalization, and designed the acclaimed AliExpress app, earning Google Editors’ Choice (2016) and Apple App of the Day (2018).
+    <div class="selected">
+      <h2>
+        <a href="javascript:(0);" id="view-selected-projects"> View Selected Projects</a>
+      </h2>
+    </div>
+  </p></div>
+
+  <script type="text/javascript">
+      // click event on a element in mynav
+      $(function() {
+        $('select').click(function() {
+          // Get the section to show
+          $(this).parent().siblings().children().removeClass('active');
+          $(this).addClass('active');
+
+          // If its already visible, do nothing.
+          // Otherwise, hide the others and then fade in the desired section.
+          if (!$section.is(':visible')) {
+            $('.hideable-section').hide();
+            $section.fadeIn();
+          }
+        });
+      });
+  </script>
+
+  <div id="what-I-like" class="hideable-section">
+     <p>
+      5K Running. Washing clothes on sunny days. JoJo. Pineapple. Documentary photograph. <i>Courage to be Disliked</i>. Splatoon 3. DEEMO. Nike Air Max 270 React. Re: Zero. Lying on the grass. Laughing. Badminton. Coding while in the library. Blue sky with vapour trail. Sunflower. Reading <i>1Q84</i> on the subway. Sia. Design. Riding a bike. Tonkotsu Ramen. <i>Yellow</i> by Coldplay. Whales. The Legend of Zelda™: Tears of the Kingdom
+    </p>
+  </div>
+  <div id="contact" class="hideable-section">
+    <h5>
+      <a href="mailto:ideryang@gmail.com"> Write me an email → </a><br><br><a href="https://www.linkedin.com/in/ideryang" target="_blank">Connect on Linkedin →</a></h5>
+
+  </div>
+  <div id="selected-projects" class="hideable-section">
+
+    <div class="main">
+
+      <div class="i18n">
+        <div class="content">
+          <a href="https://ideryang.com/i18n" target="_blank">
+            <img src="https://ideryang.oss-cn-hangzhou.aliyuncs.com/Cover/i8n.png" alt="i8n" style="width:100%">
+            <h4><strong>ALIBABA GROUP 2020</strong> <br>Selected design guidelines and best practices of Alibaba internationalization & Localization. </h4>
+          </a>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="https://ideryang.com/alipay" target="_blank">
+                <img src="https://ideryang.oss-cn-hangzhou.aliyuncs.com/alipay/AliPay.png" alt="Redesign AliPay" style="width:100%">
+
+              <h4><strong>ALIPAY 2021</strong> <br>Redesign AliPay Fintech for New User</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="https://ideryang.com/string" target="_blank">
+              <video width="100%" Autoplay loop muted>
+                <source src="https://ideryang.oss-cn-hangzhou.aliyuncs.com/Cover/string.mp4" type="video/mp4">
+              </video>
+              <h4><strong>ALIBABA GROUP 2019</strong> <br>Start My Own Business! String, Design Based Content Platform </h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="https://ideryang.com/checkout" target="_blank">
+              <video width="100%" Autoplay loop muted>
+                <source src="https://ideryang.oss-cn-hangzhou.aliyuncs.com/checkout/Card.mp4" type="video/mp4">
+              </video>
+              <h4><strong>ALIEXPRESS 2018</strong> <br>Redesign AliExpress for Checkout Process</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="https://ideryang.com/signin" target="_blank">
+              <img src="https://ideryang.oss-cn-hangzhou.aliyuncs.com/Cover/signin.png" alt="signinandsignupredesign" style="width:100%">
+              <h4><strong>ALIEXPRESS 2018</strong> <br>Redesign AliExpress for Sign in & Sign up</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="https://ideryang.com/size" target="_blank">
+              <img src="https://ideryang.oss-cn-hangzhou.aliyuncs.com/Cover/size.png" alt="sizelibrary" style="width:100%">
+              <h4><strong>ALIEXPRESS 2018</strong> <br>Augmented Reality Design for Size Library</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="https://ideryang.com/shout" target="_blank">
+              <img src="https://ideryang.oss-cn-hangzhou.aliyuncs.com/Cover/shout.gif" alt="shoutforcoupon" style="width:100%">
+              <h4><strong>ALIEXPRESS 2017</strong> <br>Game Design: Shout for Coupon AliExpress 11.11</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="https://ideryang.com/app6.0" target="_blank">
+              <img src="https://ideryang.oss-cn-hangzhou.aliyuncs.com/Cover/apple.png" alt="app6.0" style="width:100%">
+              <h4><strong>ALIEXPRESS 2018</strong> <br>AliExpress 6.0 with App of the day</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="https://ideryang.com/google" target="_blank">
+              <img src="https://ideryang.oss-cn-hangzhou.aliyuncs.com/Cover/google.png" alt="googleeditors'choice" style="width:100%">
+              <h4><strong>ALIEXPRESS 2016</strong> <br>Google Editors' Choice</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="https://ideryang.com/framerworks" target="_blank">
+              <img src="https://ideryang.oss-cn-hangzhou.aliyuncs.com/Cover/framer.gif" alt="framerworks" style="width:100%">
+              <h4><strong>PERSONAL</strong> <br>Framer Works</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <a href="https://ideryang.com/contrast" target="_blank">
+              <img src="https://ideryang.oss-cn-hangzhou.aliyuncs.com/Cover/contrast.png" alt="the color checker" style="width:100%">
+              <h4><strong>PERSONAL 2019</strong> <br>introducing color contrast checker</h4>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <script>
+    $(function() {
+      $('#view-selected-projects').click(function() {
+        $('nav a:eq(2)').trigger('click')
+      })
+    })
+  </script>
+
+
+</body>

@@ -1,0 +1,115 @@
+/*
+Design and development by Evan
+*/
+
+@keyframes Down2Up {
+  0% {
+    transform: translateY(6px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+::-moz-selection { background: #EAEAEA; }
+::selection { background: #EAEAEA; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* Pen-specific styles */
+html, body, section {
+  height: 100%;
+}
+
+body {
+  color:#000000;
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,'Helvetica-neue','SF-Pro-Text','SF-Pro-Display', sans-serif, Arial;
+  margin: 0;
+  animation: 1s ease-out 0s 1 Down2Up;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Pattern styles */
+.container {
+  display: flex;
+}
+
+.left-half {
+  background-color: #000000;
+  flex: 1;
+  padding: 1rem;
+  padding-top: 80px;
+}
+
+.right-half {
+  background-color: #FFFFFF;
+  flex: 1;
+  padding: 1rem;
+  padding-top: 80px;
+}
+
+.pic{
+  margin-left: 15%;
+  margin-top: 120px;
+}
+
+a {
+  outline:none !important;
+  text-decoration:none;
+  cursor: pointer;
+  color: #000000;
+}
+
+.active{
+  color:#283239;
+}
+
+h1,h3{
+  margin-left: 15%;
+  font-size: 3rem;
+  line-height:1.2;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+h3{
+  color: #000000;
+}
+
+h2{
+  margin-left: 15%;
+  font-size: 1.4rem;
+  line-height:1.5;
+  font-weight: bold;
+}
+
+
+h2 a:hover{
+  color:#555555;
+}
+
+
+a:hover {
+  color:#283239;
+}
+
+span{
+  color: #CCCCCC;
+}
+
+
+img {
+  animation: 1s ease-out 0s 1 Down2Up;
+}
